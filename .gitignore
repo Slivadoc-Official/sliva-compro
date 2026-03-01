@@ -1,0 +1,18 @@
+# Logs and reports
+logs
+*.log
+npm-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Dependency directory
+node_modules/
+
+# Build and cache
+dist/
+.vite/
+*.tsbuildinfo
+.eslintcache
+
+# Environment variables
+.env
+.env*.local
