@@ -972,7 +972,7 @@ const PartnershipSection: React.FC = () => {
 const ContactSection: React.FC = () => {
   const contactInfo = [
     { icon: MapPin, title: 'Office Address', value: 'Jakarta, Indonesia', href: '#' },
-    { icon: Mail, title: 'Email', value: 'info@slivatech.co.id', href: 'mailto:info@slivatech.co.id' },
+    { icon: Mail, title: 'Email', value: 'info@sliva.id', href: 'mailto:info@sliva.id' },
     { icon: Phone, title: 'Phone', value: '+62 21 1234 5678', href: 'tel:+622112345678' },
     { icon: Linkedin, title: 'LinkedIn', value: 'Sliva Technology', href: 'https://linkedin.com/company/sliva-technology' },
     { icon: Instagram, title: 'Instagram', value: '@slivatech', href: 'https://instagram.com/slivatech' },
@@ -1091,7 +1091,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4" />
-                info@slivatech.co.id
+                info@sliva.id
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4" />
