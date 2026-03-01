@@ -29,7 +29,6 @@ import {
   Code,
   Database,
   Smartphone,
-  Globe2,
   Blocks,
   Activity,
   HeartPulse
@@ -69,9 +68,11 @@ const Navigation: React.FC = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl flex items-center justify-center shadow-lg">
-              <Globe2 className="w-7 h-7 text-white" />
-            </div>
+            <img 
+              src="/logo-sliva.png" 
+              alt="Sliva Logo" 
+              className="w-12 h-12 object-contain"
+            />
             <div>
               <span className={`font-bold text-xl ${scrolled ? 'text-slate-900' : 'text-white'}`}>
                 SLIVA
@@ -1040,9 +1041,11 @@ const Footer: React.FC = () => {
           {/* Logo & Description */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl flex items-center justify-center">
-                <Globe2 className="w-7 h-7 text-white" />
-              </div>
+              <img 
+                src="/logo-sliva.png" 
+                alt="Sliva Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <span className="font-bold text-xl">SLIVA</span>
                 <p className="text-xs text-blue-300">Technology Indonesia</p>
