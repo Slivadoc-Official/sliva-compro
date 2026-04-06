@@ -476,20 +476,20 @@ const ServicesSection: React.FC = () => {
 // Products Section
 const ProductsSection: React.FC = () => {
   const products = [
-    {
-      icon: GraduationCap,
-      title: 'Sliva Academy',
-      tagline: 'Professional Technology Education Platform',
-      description: 'Empowering the next generation of technology professionals with cutting-edge skills and real-world experience.',
-      offerings: [
-        { icon: Server, name: 'Linux & DevOps Training', description: 'Master infrastructure automation and cloud operations' },
-        { icon: Code, name: 'Web Development Bootcamp', description: 'Full-stack development with modern frameworks' },
-        { icon: Blocks, name: 'Web3 Developer Program', description: 'Blockchain development and smart contracts' },
-        { icon: Building2, name: 'Corporate IT Training', description: 'Customized training for enterprise teams' },
-      ],
-      color: 'from-green-500 to-emerald-600',
-      bg: 'from-green-50 to-emerald-50',
-    },
+    // {
+    //   icon: GraduationCap,
+    //   title: 'Sliva Academy',
+    //   tagline: 'Professional Technology Education Platform',
+    //   description: 'Empowering the next generation of technology professionals with cutting-edge skills and real-world experience.',
+    //   offerings: [
+    //     { icon: Server, name: 'Linux & DevOps Training', description: 'Master infrastructure automation and cloud operations' },
+    //     { icon: Code, name: 'Web Development Bootcamp', description: 'Full-stack development with modern frameworks' },
+    //     { icon: Blocks, name: 'Web3 Developer Program', description: 'Blockchain development and smart contracts' },
+    //     { icon: Building2, name: 'Corporate IT Training', description: 'Customized training for enterprise teams' },
+    //   ],
+    //   color: 'from-green-500 to-emerald-600',
+    //   bg: 'from-green-50 to-emerald-50',
+    // },
     {
       icon: HeartPulse,
       title: 'Slivadoc',
@@ -544,7 +544,7 @@ const ProductsSection: React.FC = () => {
                 <p className="text-blue-600 font-semibold mb-4">{product.tagline}</p>
                 <p className="text-lg text-slate-600 mb-8">{product.description}</p>
                 <motion.a
-                  href="#contact"
+                  href="https://slivadoc.com/"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className={`inline-flex items-center gap-2 bg-gradient-to-r ${product.color} text-white px-6 py-3 rounded-full font-semibold shadow-lg`}
@@ -812,11 +812,27 @@ const PartnershipSection: React.FC = () => {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your partnership request! We will contact you soon.');
-  };
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        const subject = `Partnership Request - ${formData.collaborationType}`;
+        const body = `
+            Full Name: ${formData.fullName}
+            Company Name: ${formData.companyName}
+            Email: ${formData.email}
+            Phone: ${formData.phone}
+            Collaboration Type: ${formData.collaborationType}
+            
+            Message:
+            ${formData.message}
+  `;
+
+        const mailtoLink = `mailto:support@sliva.id?subject=${encodeURIComponent(
+            subject
+        )}&body=${encodeURIComponent(body)}`;
+
+        window.location.href = mailtoLink;
+    };
 
   const collaborationTypes = [
     'Technology Partnership',
@@ -828,7 +844,7 @@ const PartnershipSection: React.FC = () => {
   ];
 
   return (
-    <section id="partnership" className="py-24 bg-white">
+    <section id="partnership" className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -972,11 +988,11 @@ const PartnershipSection: React.FC = () => {
 const ContactSection: React.FC = () => {
   const contactInfo = [
     { icon: MapPin, title: 'Office Address', value: 'Jakarta, Indonesia', href: '#' },
-    { icon: Mail, title: 'Email', value: 'info@sliva.id', href: 'mailto:info@sliva.id' },
-    { icon: Phone, title: 'Phone', value: '+62 21 1234 5678', href: 'tel:+622112345678' },
-    { icon: Linkedin, title: 'LinkedIn', value: 'Sliva Technology', href: 'https://linkedin.com/company/sliva-technology' },
-    { icon: Instagram, title: 'Instagram', value: '@slivatech', href: 'https://instagram.com/slivatech' },
-    { icon: MessageCircle, title: 'WhatsApp', value: '+62 812 3456 7890', href: 'https://wa.me/6281234567890' },
+    { icon: Mail, title: 'Email', value: 'support@sliva.id', href: 'mailto:info@sliva.id' },
+    { icon: Phone, title: 'Phone', value: '+62 819 7738 8341', href: 'tel:+6281977388341' },
+    { icon: Linkedin, title: 'LinkedIn', value: 'Sliva Technology', href: 'https://www.linkedin.com/company/sliva' },
+    { icon: Instagram, title: 'Instagram', value: '@slivatechnologyindonesia', href: 'https://www.instagram.com/slivatech.id/' },
+    { icon: MessageCircle, title: 'WhatsApp', value: '+62 819 7738 8341', href: 'https://wa.me/6281977388341' },
   ];
 
   return (
@@ -1055,13 +1071,13 @@ const Footer: React.FC = () => {
               PT. Sliva Technology Indonesia is a leading technology company delivering scalable digital transformation, enterprise systems, Web3 solutions, and AI-powered platforms across multiple industries.
             </p>
             <div className="flex space-x-4">
-              <a href="https://linkedin.com/company/sliva-technology" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-all">
+              <a href="https://www.linkedin.com/company/sliva" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-all">
                 <Linkedin className="w-5 h-5" />
               </a>
               <a href="https://instagram.com/slivatech" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://wa.me/6281234567890" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-all">
+              <a href="https://wa.me/6281977388341" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-all">
                 <MessageCircle className="w-5 h-5" />
               </a>
             </div>
@@ -1095,7 +1111,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4" />
-                +62 21 1234 5678
+                +62 819 7738 8341
               </li>
             </ul>
           </div>
@@ -1121,7 +1137,7 @@ export function App() {
       <ProductsSection />
       <PortfolioSection />
       <WhyChooseUsSection />
-      <TechnologyStackSection />
+      {/*<TechnologyStackSection />*/}
       <PartnershipSection />
       <ContactSection />
       <Footer />
