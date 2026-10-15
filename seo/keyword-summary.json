@@ -1,0 +1,34 @@
+{
+  "total": 5000,
+  "unique": 5000,
+  "curatedHeadTerms": 44,
+  "by_cluster": {
+    "Website": 1009,
+    "Aplikasi": 810,
+    "Software Custom": 1207,
+    "AI dan Otomasi": 504,
+    "Cloud dan DevOps": 204,
+    "UI UX": 199,
+    "Keamanan": 93,
+    "Konsultasi IT": 4,
+    "Data dan Analytics": 400,
+    "Integrasi": 300,
+    "IoT": 180,
+    "Web3": 90
+  },
+  "by_intent": {
+    "Komersial": 844,
+    "Transaksional": 750,
+    "Informasional": 450,
+    "Komersial lokal": 1500,
+    "Komersial sektoral": 1000,
+    "Navigasional bermerek": 456
+  },
+  "method": "50 service seeds × 100 intent modifiers, enriched with curated head terms by replacing an equal number of brand variants. Unmeasured editorial candidates; validate before campaigns.",
+  "created": "2026-10-15",
+  "sources": [
+    "https://sliva.id",
+    "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "https://developers.google.com/search/docs/essentials/spam-policies"
+  ]
+}

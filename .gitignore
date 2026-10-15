@@ -19,3 +19,11 @@ dist/
 
 # Vercel
 .vercel
+
+# Generated browser traces / interactive reports
+qa/playwright-report/
+qa/test-results/
+qa/lighthouse/*.html
+
+# Artifact inspection sidecars
+*.inspect.ndjson

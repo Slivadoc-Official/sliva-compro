@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-15",
+  "framework": "Playwright + axe-core",
+  "pages": 50,
+  "viewportWidths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "tests": {
+    "startTime": "2026-10-15T07:18:51.498Z",
+    "duration": 10198.743999999999,
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "checks": [
+    {
+      "name": "all 50 routes render without errors or horizontal overflow at 1440px",
+      "status": "expected"
+    },
+    {
+      "name": "all 50 routes render without errors or horizontal overflow at 768px",
+      "status": "expected"
+    },
+    {
+      "name": "all 50 routes render without errors or horizontal overflow at 390px",
+      "status": "expected"
+    },
+    {
+      "name": "all 50 routes render without errors or horizontal overflow at 320px",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /layanan",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /layanan/pembuatan-website",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /industri",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /industri/pemerintahan",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /solusi",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /solusi/portal-layanan-publik",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /tentang",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /insight",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /insight/cara-memilih-vendor-aplikasi",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /biaya",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /produk",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /kemitraan",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /kontak",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /faq",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /privasi",
+      "status": "expected"
+    },
+    {
+      "name": "accessible template /ketentuan",
+      "status": "expected"
+    },
+    {
+      "name": "navigation, keyboard tabs, FAQ and content filters work",
+      "status": "expected"
+    },
+    {
+      "name": "consultation prepares the correct WhatsApp message and validates required fields",
+      "status": "expected"
+    },
+    {
+      "name": "HTML content is available without JavaScript and unknown URLs return 404",
+      "status": "expected"
+    }
+  ],
+  "scope": "Browser behavior, render/hydration errors, overflow, 17 accessible templates, WhatsApp handoff intercepted without sending a message, no-JS content, real 404"
+}

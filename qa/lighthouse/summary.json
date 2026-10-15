@@ -1,0 +1,128 @@
+[
+  {
+    "name": "home-mobile",
+    "path": "/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "FCP": "1.4 s",
+      "LCP": "1.7 s",
+      "CLS": "0",
+      "TBT": "0 ms"
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "value": "Est savings of 44 KiB"
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names."
+      }
+    ]
+  },
+  {
+    "name": "service-mobile",
+    "path": "/layanan/pembuatan-website",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "FCP": "1.5 s",
+      "LCP": "1.9 s",
+      "CLS": "0",
+      "TBT": "0 ms"
+    },
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "value": "Est savings of 11 KiB"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "value": "Est savings of 48 KiB"
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names."
+      }
+    ]
+  },
+  {
+    "name": "contact-mobile",
+    "path": "/kontak",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "FCP": "1.4 s",
+      "LCP": "1.7 s",
+      "CLS": "0",
+      "TBT": "0 ms"
+    },
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "value": "Est savings of 12 KiB"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "value": "Est savings of 48 KiB"
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names."
+      }
+    ]
+  },
+  {
+    "name": "home-desktop",
+    "path": "/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "FCP": "0.4 s",
+      "LCP": "0.4 s",
+      "CLS": "0",
+      "TBT": "0 ms"
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "value": "Est savings of 44 KiB"
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names."
+      }
+    ]
+  }
+]
